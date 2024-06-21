@@ -99,6 +99,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+    uint8_t msg[] = "hello world\r\n";
+    CDC_Transmit_FS(msg, sizeof(msg));
+    HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }
